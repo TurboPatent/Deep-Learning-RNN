@@ -7,7 +7,6 @@
   },
   "license": "MIT",
   "isPrivate": false,
-  "homepage": "https://tp.turbopatent.us/pathub/packages/TurboPatent/Deep-Learning-RNN.tp",
   "details": {
     "counts": {
       "termCount": 0,
@@ -16,38 +15,26 @@
       "drawingCount": 3,
       "glossaryCount": 5
     },
-    "drawings": [
+    "briefDescriptions": [
+      "<p>illustrates a <span data-role=\"tag\" data-value=\"7bd5b7aa-7127-0e53-e83d-1b959bb84a2c\" id=\"id90ecd117-8ac0-ce45-66ef-f0bb736bc2cf\" data-type=\"drawingObject\">recurrent neural network 100</span> in accordance with one embodiment.</p>",
+      "<p>illustrates a <span data-role=\"tag\" data-value=\"721b6bb7-1985-e6f5-1ab6-c9203634debc\" id=\"idc24af75a-39a4-84e6-e133-e571f093c1c4\" data-type=\"drawingObject\">bidirectional recurrent neural network 200</span> in accordance with one embodiment.</p>",
+      "<p>illustrates a <span data-role=\"tag\" data-value=\"907af07d-0332-710b-af1c-53d685b2e5cd\" id=\"id20ce07ce-dd0e-ad48-3d97-839a32774c6b\" data-type=\"drawingObject\">long short-term memory 300</span> in accordance with one embodiment.</p>"
+    ],
+    "parts": [
       {
-        "figure": "Fig. 1",
-        "briefDescription": "<p><b>Fig. 1</b> illustrates a recurrent neural network 100 in accordance with one embodiment.</p>",
-        "parts": [
-          {
-            "part": "recurrent neural network",
-            "number": 100
-          }
-        ]
+        "name": "recurrent neural network",
+        "number": 100
       },
       {
-        "figure": "Fig. 2",
-        "briefDescription": "<p><b>Fig. 2</b> illustrates a bidirectional recurrent neural network 200 in accordance with one embodiment.</p>",
-        "parts": [
-          {
-            "part": "bidirectional recurrent neural network",
-            "number": 200
-          }
-        ]
+        "name": "bidirectional recurrent neural network",
+        "number": 200
       },
       {
-        "figure": "Fig. 3",
-        "briefDescription": "<p><b>Fig. 3</b> illustrates a long short-term memory 300 in accordance with one embodiment.</p>",
-        "parts": [
-          {
-            "part": "long short-term memory&#xA0;",
-            "number": 300
-          }
-        ]
+        "name": "long short-term memory",
+        "number": 300
       }
     ],
+    "terms": [],
     "glossary": [
       {
         "term": "CTC loss function",
@@ -69,8 +56,7 @@
         "term": "Adam optimizer",
         "definition": "an optimization algorithm that can used instead of the classical stochastic gradient descent procedure to update network weights iterative based in training data. Stochastic gradient descent maintains a single learning rate (termed alpha) for all weight updates and the learning rate does not change during training. A learning rate is maintained for each network weight (parameter) and separately adapted as learning unfolds. Adam as combining the advantages of two other extensions of stochastic gradient descent. Specifically, Adaptive Gradient Algorithm (AdaGrad) that maintains a per-parameter learning rate that improves performance on problems with sparse gradients (e.g. natural language and computer vision problems), and Root Mean Square Propagation (RMSProp) that also maintains per-parameter learning rates that are adapted based on the average of recent magnitudes of the gradients for the weight (e.g. how quickly it is changing). This means the algorithm does well on online and non-stationary problems (e.g. noisy).\nAdam realizes the benefits of both AdaGrad and RMSProp.\nInstead of adapting the parameter learning rates based on the average first moment (the mean) as in RMSProp, Adam also makes use of the average of the second moments of the gradients (the uncentered variance).\nSpecifically, the algorithm calculates an exponential moving average of the gradient and the squared gradient, and the parameters beta1 and beta2 control the decay rates of these moving averages.\nThe initial value of the moving averages and beta1 and beta2 values close to 1.0 (recommended) result in a bias of moment estimates towards zero. This bias is overcome by first calculating the biased estimates before then calculating bias-corrected estimates."
       }
-    ],
-    "terms": []
+    ]
   },
   "repository": "https://github.com/TurboPatent/Deep-Learning-RNN"
 }
